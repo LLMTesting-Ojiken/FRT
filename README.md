@@ -1,16 +1,35 @@
+
 # FRT
 
-**FRT (Function-Level Semantic Reconstruction Testing)** is an automated testing framework for detecting **logic bugs** in Database Management Systems (DBMSs). It is built on the observation that many SQL functions admit multiple **semantically equivalent** formulations. FRT systematically reconstructs SQL functions into equivalent variants and validates their consistency through differential execution.
+> **Function-Level Reconstruction Testing for Database Management Systems**
 
-Unlike existing DBMS testing approaches that primarily focus on query-level or predicate-level semantic validation, FRT performs **function-level semantic equivalence reconstruction**, enabling it to exercise diverse execution paths and expose subtle implementation bugs in DBMS function implementations.
+FRT (**Function-Level Reconstruction Testing**) is an automated testing framework for detecting **logic bugs** in Database Management Systems (DBMSs).
+
+FRT is based on the observation that many built-in SQL functions admit multiple **semantically equivalent** formulations. It systematically reconstructs function expressions into equivalent variants and validates their consistency through differential execution. Any inconsistency among equivalent formulations indicates a potential logic bug in the DBMS implementation.
+
+Unlike existing DBMS testing approaches that primarily perform semantic validation at the query or predicate level, FRT explores **function-level semantic equivalence reconstruction**, enabling it to exercise diverse execution paths and expose subtle implementation bugs that may remain undetected by existing testing techniques.
+
+---
+
+## ✨ Highlights
+
+- Detects **logic bugs** in DBMSs through differential testing.
+- Explores **function-level semantic equivalence reconstruction**.
+- Automatically reconstructs SQL functions into semantically equivalent variants.
+- Exercises diverse execution paths to expose implementation bugs.
+- Supports multiple popular DBMSs.
+
+---
 
 ## Supported DBMSs
 
-- SQLite3
-- MySQL
-- TiDB
-- CockroachDB
-- DM8 (Internal Test)
+| DBMS | Status |
+| :--- | :----: |
+| SQLite3 | ✅ |
+| MySQL | ✅ |
+| TiDB | ✅ |
+| CockroachDB | ✅ |
+| DM8 | ✅ *(Internal Test)* |
 
 ---
 
@@ -22,9 +41,7 @@ Unlike existing DBMS testing approaches that primarily focus on query-level or p
 - Maven
 - The corresponding DBMS to be tested
 
----
-
-## Build FRT
+## Build
 
 ```bash
 mvn clean package -DskipTests
@@ -33,6 +50,34 @@ mvn clean package -DskipTests
 ---
 
 # Running FRT
+
+The following examples illustrate how to run FRT on different DBMSs.
+
+## SQLite3
+
+```bash
+java -jar target/sqlancer-*.jar \
+    --num-threads 1 \
+    --num-tries 1 \
+    sqlite3 \
+    --oracle FRT
+```
+
+---
+
+## MySQL
+
+```bash
+java -jar target/sqlancer-*.jar \
+    --num-threads 1 \
+    --num-tries 1 \
+    --username=root \
+    --password <password> \
+    mysql \
+    --oracle FRT
+```
+
+---
 
 ## TiDB
 
@@ -78,51 +123,12 @@ java -jar target/sqlancer-*.jar \
 
 ---
 
-## SQLite3
-
-Run FRT:
-
-```bash
-java -jar target/sqlancer-*.jar \
-    --num-threads 1 \
-    --num-tries 1 \
-    sqlite3 \
-    --oracle FRT
-```
-
----
-
-## MySQL
-
-Run FRT:
-
-```bash
-java -jar target/sqlancer-*.jar \
-    --num-threads 1 \
-    --num-tries 1 \
-    --username=root \
-    --password <password> \
-    mysql \
-    --oracle FRT
-```
-
----
-
 # Output
 
-FRT continuously generates database states and semantically equivalent function-level query variants during testing. Whenever two equivalent queries produce inconsistent results, FRT reports a potential logic bug. Detected bugs and testing logs are written to the output directory for further analysis.
+During testing, FRT continuously generates database states and semantically equivalent function-level query variants. Whenever two equivalent queries produce inconsistent results, FRT reports a potential logic bug. Testing logs and detected bugs are written to the corresponding output directory for further analysis.
 
 ---
 
-# Citation
+# Acknowledgement
 
-If you find this project useful for your research, please consider giving this repository a ⭐ and citing our paper:
-
-```bibtex
-@inproceedings{frt2027,
-  title={FRT: Testing Database Systems via Function-Level Semantic Equivalence Reconstruction},
-  author={...},
-  booktitle={Proceedings of the IEEE/ACM International Conference on Software Engineering},
-  year={2027}
-}
-```
+FRT is implemented on top of the **SQLancer** framework and extends it with a novel **Function-Level Reconstruction Testing (FRT)** oracle for detecting DBMS logic bugs.
