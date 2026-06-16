@@ -1,20 +1,20 @@
 
 # FRT
 
-> **Function-Level Reconstruction Testing for Database Management Systems**
+> **Function-Level Semantic Reconstruction Testing for Database Management Systems**
 
-FRT (**Function-Level Reconstruction Testing**) is an automated testing framework for detecting **logic bugs** in Database Management Systems (DBMSs).
+FRT (**Function-Level Semantic Reconstruction Testing**) is an automated testing framework for detecting **logic bugs** in Database Management Systems (DBMSs).
 
-FRT is based on the observation that many built-in SQL functions admit multiple **semantically equivalent** formulations. It systematically reconstructs function expressions into equivalent variants and validates their consistency through differential execution. Any inconsistency among equivalent formulations indicates a potential logic bug in the DBMS implementation.
+FRT is based on the observation that many SQL functions admit multiple **semantically equivalent** formulations. It systematically reconstructs function expressions into equivalent variants and validates their consistency through differential execution. Any inconsistency among equivalent formulations indicates a potential logic bug in the DBMS implementation.
 
-Unlike existing DBMS testing approaches that primarily perform semantic validation at the query or predicate level, FRT explores **function-level semantic equivalence reconstruction**, enabling it to exercise diverse execution paths and expose subtle implementation bugs that may remain undetected by existing testing techniques.
+Unlike existing DBMS testing approaches that primarily perform semantic validation at the query or predicate level, FRT explores **function-level semantic reconstruction**, enabling it to exercise diverse execution paths and expose subtle implementation bugs that may remain undetected by existing testing techniques.
 
 ---
 
 ## ✨ Highlights
 
 - Detects **logic bugs** in DBMSs through differential testing.
-- Explores **function-level semantic equivalence reconstruction**.
+- Explores **function-level semantic reconstruction**.
 - Automatically reconstructs SQL functions into semantically equivalent variants.
 - Exercises diverse execution paths to expose implementation bugs.
 - Supports multiple popular DBMSs.
@@ -131,4 +131,4 @@ During testing, FRT continuously generates database states and semantically equi
 
 # Acknowledgement
 
-FRT is implemented on top of the **SQLancer** framework and extends it with a novel **Function-Level Reconstruction Testing (FRT)** oracle for detecting DBMS logic bugs.
+FRT is implemented on top of the **SQLancer** framework and extends it with a novel **Function-Level Semantic Reconstruction Testing (FRT)** oracle for detecting DBMS logic bugs.
