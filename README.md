@@ -10,6 +10,7 @@ Unlike existing DBMS testing approaches that primarily focus on query-level or p
 - MySQL
 - TiDB
 - CockroachDB
+- DM8 (Internal Test)
 
 ---
 
@@ -100,7 +101,7 @@ java -jar target/sqlancer-*.jar \
     --num-threads 1 \
     --num-tries 1 \
     --username=root \
-    --password Hzkjdx123456 \
+    --password <password> \
     mysql \
     --oracle FRT
 ```
