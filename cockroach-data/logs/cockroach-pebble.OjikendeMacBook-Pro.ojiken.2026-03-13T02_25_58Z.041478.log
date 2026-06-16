@@ -1,0 +1,43 @@
+I260313 02:25:58.691267 97 util/log/file_sync_buffer.go:237 ⋮ [config]   file created at: 2026/03/13 02:25:58
+I260313 02:25:58.691491 97 util/log/file_sync_buffer.go:237 ⋮ [config]   running on machine: ‹OjikendeMacBook-Pro.local›
+I260313 02:25:58.691497 97 util/log/file_sync_buffer.go:237 ⋮ [config]   binary: CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:25:58.691500 97 util/log/file_sync_buffer.go:237 ⋮ [config]   arguments: [‹cockroach› ‹start-single-node› ‹--insecure›]
+I260313 02:25:58.691505 97 util/log/file_sync_buffer.go:237 ⋮ [config]   log format (utf8=✓): crdb-v2
+I260313 02:25:58.691508 97 util/log/file_sync_buffer.go:237 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I260313 02:25:58.691092 97 3@pebble/objstorage/objstorageprovider/remote.go:104 ⋮ [n?,s?,pebble] 1  remote storage configured; no creatorID yet
+I260313 02:25:58.704959 97 3@pebble/event.go:1280 ⋮ [n?,s?,pebble] 2  [JOB 1] MANIFEST created 000001
+I260313 02:25:58.705223 97 3@pebble/open.go:416 ⋮ [n?,s?,pebble] 3  Found 0 WALs
+I260313 02:25:58.709794 97 3@pebble/event.go:1308 ⋮ [n?,s?,pebble] 4  [JOB 1] WAL created 000002
+I260313 02:25:58.712854 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 5  upgraded to format version: 014
+I260313 02:25:58.717864 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 6  upgraded to format version: 015
+I260313 02:25:58.722759 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 7  upgraded to format version: 016
+I260313 02:25:58.726696 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 8  upgraded to format version: 017
+I260313 02:25:58.730738 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 9  upgraded to format version: 018
+I260313 02:25:58.734715 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 10  upgraded to format version: 019
+I260313 02:25:58.741897 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 11  upgraded to format version: 020
+I260313 02:25:58.746862 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 12  upgraded to format version: 021
+I260313 02:25:58.754989 97 3@pebble/event.go:1324 ⋮ [n?,s?,pebble] 13  available disk space under 10% (38GB of 460GB)
+I260313 02:25:58.755172 126 3@pebble/event.go:1300 ⋮ [n?,s?,pebble] 14  [JOB 2] all initial table stats loaded
+I260313 02:25:58.796781 97 3@pebble/event.go:1280 ⋮ [n?,s?,pebble] 15  [JOB 1] MANIFEST created 000001
+I260313 02:25:58.796863 97 3@pebble/open.go:416 ⋮ [n?,s?,pebble] 16  Found 0 WALs
+I260313 02:25:58.800816 97 3@pebble/event.go:1308 ⋮ [n?,s?,pebble] 17  [JOB 1] WAL created 000002
+I260313 02:25:58.803929 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 18  upgraded to format version: 014
+I260313 02:25:58.806861 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 19  upgraded to format version: 015
+I260313 02:25:58.810834 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 20  upgraded to format version: 016
+I260313 02:25:58.814826 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 21  upgraded to format version: 017
+I260313 02:25:58.818806 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 22  upgraded to format version: 018
+I260313 02:25:58.821854 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 23  upgraded to format version: 019
+I260313 02:25:58.824824 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 24  upgraded to format version: 020
+I260313 02:25:58.828851 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 25  upgraded to format version: 021
+I260313 02:25:58.835944 97 3@pebble/event.go:1324 ⋮ [n?,s?,pebble] 26  available disk space under 10% (38GB of 460GB)
+I260313 02:25:58.835992 174 3@pebble/event.go:1300 ⋮ [n?,s?,pebble] 27  [JOB 2] all initial table stats loaded
+I260313 02:25:58.870826 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 28  upgraded to format version: 022
+I260313 02:25:58.874877 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 29  upgraded to format version: 023
+I260313 02:25:58.878789 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 30  upgraded to format version: 024
+I260313 02:25:58.881831 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 31  upgraded to format version: 025
+I260313 02:25:58.885878 97 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 32  upgraded to format version: 026
+I260313 02:25:58.903890 97 3@pebble/objstorage/objstorageprovider/remote.go:192 ⋮ [n?,s1,pebble] 33  remote storage creatorID set to 1
+I260313 02:25:59.345924 702 3@pebble/event.go:1308 ⋮ [n1,s1,pebble] 34  [JOB 3] WAL created 000004
+I260313 02:25:59.357890 652 3@pebble/event.go:1308 ⋮ [n1,s1,pebble] 35  [JOB 4] WAL created 000005
+I260313 02:25:59.376841 653 3@pebble/event.go:1308 ⋮ [n1,s1,pebble] 36  [JOB 5] WAL created 000006
+I260313 02:26:09.293879 657 3@pebble/event.go:1308 ⋮ [n1,s1,pebble] 37  [JOB 6] WAL created 000007

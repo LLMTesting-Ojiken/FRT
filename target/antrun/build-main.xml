@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <delete>
+      <fileset includes="original-sqlancer-*.jar" dir="/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/target/" />
+    </delete>
+  </target>
+</project>

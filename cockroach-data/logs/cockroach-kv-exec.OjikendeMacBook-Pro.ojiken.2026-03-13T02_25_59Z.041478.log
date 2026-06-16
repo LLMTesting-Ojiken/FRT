@@ -1,0 +1,19 @@
+I260313 02:25:59.245247 599 util/log/file_sync_buffer.go:237 ⋮ [config]   file created at: 2026/03/13 02:25:59
+I260313 02:25:59.245253 599 util/log/file_sync_buffer.go:237 ⋮ [config]   running on machine: ‹OjikendeMacBook-Pro.local›
+I260313 02:25:59.245259 599 util/log/file_sync_buffer.go:237 ⋮ [config]   binary: CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:25:59.245263 599 util/log/file_sync_buffer.go:237 ⋮ [config]   arguments: [‹cockroach› ‹start-single-node› ‹--insecure›]
+I260313 02:25:59.245269 599 util/log/file_sync_buffer.go:237 ⋮ [config]   log format (utf8=✓): crdb-v2
+I260313 02:25:59.245271 599 util/log/file_sync_buffer.go:237 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I260313 02:25:59.244989 599 15@kv/kvserver/kvstorage/init.go:250 ⋮ [T1,Vsystem,n1,s1] 1  beginning range descriptor iteration
+I260313 02:25:59.245558 599 15@kv/kvserver/kvstorage/init.go:374 ⋮ [T1,Vsystem,n1,s1] 2  range descriptor iteration done: 78 range descriptors, 0 intents, 0 tombstones; stats: ‹seeked 160 times (81 internal); stepped 0 times (0 internal); blocks: 0B cached; points: 79 (1.6KB keys, 2.3KB values)›
+I260313 02:25:59.245704 599 15@kv/kvserver/kvstorage/init.go:501 ⋮ [T1,Vsystem,n1,s1] 3  loaded replica ID for 78/78 replicas
+I260313 02:25:59.245878 599 15@kv/kvserver/kvstorage/init.go:518 ⋮ [T1,Vsystem,n1,s1] 4  loaded Raft state for 78/78 replicas
+I260313 02:25:59.245901 599 15@kv/kvserver/kvstorage/init.go:545 ⋮ [T1,Vsystem,n1,s1] 5  loaded 78 replicas
+I260313 02:25:59.245912 599 15@kv/kvserver/kvstorage/init.go:576 ⋮ [T1,Vsystem,n1,s1] 6  verified 78/78 replicas
+I260313 02:25:59.250022 599 15@kv/kvserver/store.go:2377 ⋮ [T1,Vsystem,n1,s1] 7  initialized 78/78 replicas
+I260313 02:25:59.327864 639 15@kv/kvserver/storeliveness/support_manager.go:293 ⋮ [T1,Vsystem,n1,s1] 8  starting to heartbeat store {NodeID:1 StoreID:1}
+I260313 02:25:59.338832 639 15@kv/kvserver/storeliveness/supporter_state.go:298 ⋮ [T1,Vsystem,n1,s1] 9  provided support for store {NodeID:1 StoreID:1}; old = {Target:{NodeID:1 StoreID:1} Epoch:0 Expiration:0,0}, new = {Target:{NodeID:1 StoreID:1} Epoch:1 Expiration:1773368762.327890000,0}
+I260313 02:25:59.354840 639 15@kv/kvserver/storeliveness/requester_state.go:425 ⋮ [T1,Vsystem,n1,s1] 10  received support from store {NodeID:1 StoreID:1}; old = {Target:{NodeID:1 StoreID:1} Epoch:1 Expiration:0,0}, new = {Target:{NodeID:1 StoreID:1} Epoch:1 Expiration:1773368762.327890000,0}
+W260313 02:26:12.315894 1793 15@kv/kvclient/kvcoord/dist_sender_mux_rangefeed.go:406 ⋮ [T1,Vsystem,n1,job=AUTO SPAN CONFIG RECONCILIATION id=1157688064313982977,rangefeed=‹sql-watcher-zones-rangefeed›,mux_n=1,gen=2] 11  error closing mux rangefeed client: context canceled
+W260313 02:26:12.315887 1802 15@kv/kvclient/kvcoord/dist_sender_mux_rangefeed.go:406 ⋮ [T1,Vsystem,n1,job=AUTO SPAN CONFIG RECONCILIATION id=1157688064313982977,rangefeed=‹sql-watcher-descriptor-rangefeed›,mux_n=1,gen=2] 13  error closing mux rangefeed client: context canceled
+W260313 02:26:12.315914 1632 15@kv/kvclient/kvcoord/dist_sender_mux_rangefeed.go:406 ⋮ [T1,Vsystem,n1,job=AUTO SPAN CONFIG RECONCILIATION id=1157688064313982977,rangefeed=‹sql-watcher-protected-ts-records-rangefeed›,mux_n=1,gen=2] 12  error closing mux rangefeed client: context canceled

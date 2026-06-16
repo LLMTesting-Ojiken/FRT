@@ -1,0 +1,55 @@
+I260313 02:26:58.664023 1 util/log/file_sync_buffer.go:237 ⋮ [config]   file created at: 2026/03/13 02:26:58
+I260313 02:26:58.664026 1 util/log/file_sync_buffer.go:237 ⋮ [config]   running on machine: ‹OjikendeMacBook-Pro.local›
+I260313 02:26:58.664030 1 util/log/file_sync_buffer.go:237 ⋮ [config]   binary: CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:26:58.664032 1 util/log/file_sync_buffer.go:237 ⋮ [config]   arguments: [‹cockroach› ‹start-single-node› ‹--insecure›]
+I260313 02:26:58.664035 1 util/log/file_sync_buffer.go:237 ⋮ [config]   log format (utf8=✓): crdb-v2
+I260313 02:26:58.664037 1 util/log/file_sync_buffer.go:237 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1  ALL SECURITY CONTROLS HAVE BEEN DISABLED!
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +This mode is intended for non-production testing only.
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +In this mode:
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +- Your cluster is open to any client that can access ‹any of your IP addresses›.
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +- Intruders with access to your machine or network can observe client-server traffic.
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +- Intruders can log in without password and read or write any data in the cluster.
+W260313 02:26:58.663875 1 1@cli/start.go:1461 ⋮ [n?] 1 +- Intruders can consume all your server's resources and cause unavailability.
+I260313 02:26:58.664185 1 1@cli/start.go:1471 ⋮ [n?] 2  To start a secure server without mandating TLS for clients,
+I260313 02:26:58.664185 1 1@cli/start.go:1471 ⋮ [n?] 2 +consider --accept-sql-without-tls instead. For other options, see:
+I260313 02:26:58.664185 1 1@cli/start.go:1471 ⋮ [n?] 2 +
+I260313 02:26:58.664185 1 1@cli/start.go:1471 ⋮ [n?] 2 +- https://go.crdb.dev/issue-v/53404/v25.4
+I260313 02:26:58.664185 1 1@cli/start.go:1471 ⋮ [n?] 2 +- https://www.cockroachlabs.com/docs/v25.4/secure-a-cluster.html
+W260313 02:26:58.664210 1 1@cli/start.go:1383 ⋮ [n?] 3  Using the default setting for --cache (256 MiB).
+W260313 02:26:58.664210 1 1@cli/start.go:1383 ⋮ [n?] 3 +  A significantly larger value is usually needed for good performance.
+W260313 02:26:58.664210 1 1@cli/start.go:1383 ⋮ [n?] 3 +  If you have a dedicated server a reasonable setting is --cache=.25 (4.0 GiB).
+I260313 02:26:58.664223 1 1@cli/start.go:1500 ⋮ [n?] 4  CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:26:58.664330 1 1@cli/start.go:577 ⋮ [n?] 5  soft memory limit of Go runtime is set to 9.0 GiB
+I260313 02:26:58.664339 1 1@cli/start.go:614 ⋮ [n?] 6  GC target percentage of Go runtime is set to 300%
+I260313 02:26:58.665806 1 server/config.go:676 ⋮ [T1,Vsystem,n?] 7  system total memory: 16 GiB
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8  server configuration:
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +max offset             500000000
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +cache size             256 MiB
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +SQL memory pool size   4.0 GiB
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +scan interval          10m0s
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +scan min idle time     10ms
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +scan max idle time     1s
+I260313 02:26:58.665815 1 server/config.go:678 ⋮ [T1,Vsystem,n?] 8 +event log enabled      true
+I260313 02:26:58.665849 1 1@cli/start.go:1361 ⋮ [T1,Vsystem,n?] 9  using local environment variables:
+I260313 02:26:58.665849 1 1@cli/start.go:1361 ⋮ [T1,Vsystem,n?] 9 +LC_CTYPE=‹UTF-8›
+I260313 02:26:58.665849 1 1@cli/start.go:1361 ⋮ [T1,Vsystem,n?] 9 +TERM=xterm-256color
+I260313 02:26:58.665856 1 1@cli/start.go:1368 ⋮ [T1,Vsystem,n?] 10  process identity: uid 501 euid 501 gid 20 egid 20
+W260313 02:26:58.666044 1 1@cli/start.go:1525 ⋮ [T1,Vsystem,n?] 11  could not initialize GEOS - spatial functions may not be available: geos: error during GEOS init: geos: cannot load GEOS from dir ‹"/usr/local/lib/cockroach"›: ‹geos error: dlopen(/usr/local/lib/cockroach/libgeos.dylib, 0x0001): tried: '/usr/local/lib/cockroach/libgeos.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/cockroach/libgeos.dylib' (no such file), '/usr/local/lib/cockroach/libgeos.dylib' (no such file)›
+W260313 02:26:58.666044 1 1@cli/start.go:1525 ⋮ [T1,Vsystem,n?] 11 +HINT: ‹Ensure you have the spatial libraries installed as per the instructions in https://www.cockroachlabs.com/docs/v25.4/install-cockroachdb-mac›
+I260313 02:26:58.666082 1 1@cli/start.go:800 ⋮ [T1,Vsystem,n?] 12  starting cockroach node
+I260313 02:26:58.750197 105 server/config.go:904 ⋮ [T1,Vsystem,n?] 13  1 storage engine initialized
+I260313 02:26:58.750210 105 server/config.go:907 ⋮ [T1,Vsystem,n?] 14  Pebble cache size: 256 MiB
+I260313 02:26:58.750218 105 server/config.go:907 ⋮ [T1,Vsystem,n?] 15  store 0: disk deviceID: 1:17
+I260313 02:26:58.750222 105 server/config.go:907 ⋮ [T1,Vsystem,n?] 16  store 0: max size 0 B, max open file limit 56440
+I260313 02:26:58.750225 105 server/config.go:907 ⋮ [T1,Vsystem,n?] 17  store 0: /Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data: rw encrypted=false fs:{bdev=/dev/disk3s1s1 fstype=apfs mountpoint=/ mountopts=}
+I260313 02:26:58.758257 156 util/cidr/cidr.go:299 ⋮ [T1,Vsystem,n?] 18  CIDR lookup updated with 0 destinations
+I260313 02:26:58.856297 105 1@server/clock_monotonicity.go:61 ⋮ [T1,Vsystem,n?] 19  monitoring forward clock jumps based on server.clock.forward_jump_check.enabled
+I260313 02:26:58.879032 1 1@cli/start.go:1057 ⋮ [T1,Vsystem,n?] 20  initiating hard shutdown of server
+I260313 02:26:58.879118 1 1@cli/start.go:1135 ⋮ [T1,Vsystem,n?] 21  too early to drain; used hard shutdown instead
+E260313 02:26:58.879364 1 1@cli/clierror/check.go:35 ⋮ [-] 22  ‹ERROR›: cannot dial server.
+E260313 02:26:58.879364 1 1@cli/clierror/check.go:35 ⋮ [-] 22 +Is the server running?
+E260313 02:26:58.879364 1 1@cli/clierror/check.go:35 ⋮ [-] 22 +If the server is running, check --host client-side and --advertise server-side.
+E260313 02:26:58.879364 1 1@cli/clierror/check.go:35 ⋮ [-] 22 +server startup failed: cockroach server exited with error: consider changing the port via --‹http-addr›: listen tcp ‹:8080›: bind: address already in use

@@ -1,0 +1,8 @@
+I260313 02:26:00.189422 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   file created at: 2026/03/13 02:26:00
+I260313 02:26:00.189429 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   running on machine: ‹OjikendeMacBook-Pro.local›
+I260313 02:26:00.189434 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   binary: CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:26:00.189437 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   arguments: [‹cockroach› ‹start-single-node› ‹--insecure›]
+I260313 02:26:00.189443 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   log format (utf8=✓): crdb-v2
+I260313 02:26:00.189449 2028 util/log/file_sync_buffer.go:237 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I260313 02:26:00.189076 2028 5@util/log/event_log.go:90 ⋮ [T1,Vsystem,n1,job=MIGRATION id=1157688065948090369,upgrade=0.0-upgrading-step-004,intExec=create-default-DB] 1 ={"Timestamp":1773368760178563000,"EventType":"create_database","Statement":"CREATE DATABASE IF NOT EXISTS defaultdb OWNER = root","Tag":"CREATE DATABASE","User":"node","DescriptorID":100,"ApplicationName":"$ internal-create-default-DB","DatabaseName":"defaultdb"}
+I260313 02:26:00.237251 1984 5@util/log/event_log.go:90 ⋮ [T1,Vsystem,n1,job=MIGRATION id=1157688065948090369,upgrade=0.0-upgrading-step-004,intExec=create-default-DB] 2 ={"Timestamp":1773368760226116000,"EventType":"create_database","Statement":"CREATE DATABASE IF NOT EXISTS postgres OWNER = root","Tag":"CREATE DATABASE","User":"node","DescriptorID":102,"ApplicationName":"$ internal-create-default-DB","DatabaseName":"postgres"}

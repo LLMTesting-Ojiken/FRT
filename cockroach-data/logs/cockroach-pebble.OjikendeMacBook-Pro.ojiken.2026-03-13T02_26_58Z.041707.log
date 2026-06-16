@@ -1,0 +1,63 @@
+I260313 02:26:58.675646 105 util/log/file_sync_buffer.go:237 ⋮ [config]   file created at: 2026/03/13 02:26:58
+I260313 02:26:58.675652 105 util/log/file_sync_buffer.go:237 ⋮ [config]   running on machine: ‹OjikendeMacBook-Pro.local›
+I260313 02:26:58.675657 105 util/log/file_sync_buffer.go:237 ⋮ [config]   binary: CockroachDB CCL v25.4.0 (aarch64-apple-darwin21.2, built 2025/10/28 18:45:30, go1.23.12 X:nocoverageredesign)
+I260313 02:26:58.675660 105 util/log/file_sync_buffer.go:237 ⋮ [config]   arguments: [‹cockroach› ‹start-single-node› ‹--insecure›]
+I260313 02:26:58.675666 105 util/log/file_sync_buffer.go:237 ⋮ [config]   log format (utf8=✓): crdb-v2
+I260313 02:26:58.675668 105 util/log/file_sync_buffer.go:237 ⋮ [config]   line format: [IWEF]yymmdd hh:mm:ss.uuuuuu goid [chan@]file:line redactionmark \[tags\] [counter] msg
+I260313 02:26:58.675434 105 3@pebble/objstorage/objstorageprovider/remote.go:102 ⋮ [n?,s?,pebble] 1  remote storage configured; creatorID = 1
+I260313 02:26:58.677267 105 3@pebble/open.go:416 ⋮ [n?,s?,pebble] 2  Found 5 WALs
+I260313 02:26:58.677288 105 3@pebble/open.go:418 ⋮ [n?,s?,pebble] 3    - ‹000002›: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,‹000›)}
+I260313 02:26:58.677308 105 3@pebble/open.go:418 ⋮ [n?,s?,pebble] 4    - ‹000004›: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,‹000›)}
+I260313 02:26:58.677314 105 3@pebble/open.go:418 ⋮ [n?,s?,pebble] 5    - ‹000005›: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,‹000›)}
+I260313 02:26:58.677318 105 3@pebble/open.go:418 ⋮ [n?,s?,pebble] 6    - ‹000006›: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,‹000›)}
+I260313 02:26:58.677322 105 3@pebble/open.go:418 ⋮ [n?,s?,pebble] 7    - ‹000007›: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,‹000›)}
+I260313 02:26:58.679284 105 3@pebble/open.go:1076 ⋮ [n?,s?,pebble] 8  [JOB ‹1›] WAL ‹000002: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,000)}› stopped reading at offset: (‹/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data/000002.log›: 131342); replayed 1219 keys in 113 batches
+I260313 02:26:58.680021 105 3@pebble/open.go:1076 ⋮ [n?,s?,pebble] 9  [JOB ‹1›] WAL ‹000004: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,000)}› stopped reading at offset: (‹/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data/000004.log›: 166383); replayed 2 keys in 2 batches
+I260313 02:26:58.681120 105 3@pebble/open.go:1076 ⋮ [n?,s?,pebble] 10  [JOB ‹1›] WAL ‹000005: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,000)}› stopped reading at offset: (‹/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data/000005.log›: 586240); replayed 14 keys in 11 batches
+I260313 02:26:58.686440 105 3@pebble/open.go:1076 ⋮ [n?,s?,pebble] 11  [JOB ‹1›] WAL ‹000006: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,000)}› stopped reading at offset: (‹/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data/000006.log›: 1534350); replayed 7309 keys in 1637 batches
+I260313 02:26:58.690295 105 3@pebble/open.go:1076 ⋮ [n?,s?,pebble] 12  [JOB ‹1›] WAL ‹000007: {(/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data,000)}› stopped reading at offset: (‹/Users/ojiken/Desktop/达梦-实习/模糊测试（开题报告）计划/代码/sqlancer-main/cockroach-data/000007.log›: 1952103); replayed 4912 keys in 211 batches
+I260313 02:26:58.690383 121 3@pebble/event.go:1260 ⋮ [n?,s?,pebble] 13  [JOB 2] flushing 6 memtables (4.6MB) to L0
+I260313 02:26:58.690572 121 3@pebble/event.go:1288 ⋮ [n?,s?,pebble] 14  [JOB 2] flushing: sstable created 000009
+I260313 02:26:58.690674 121 3@pebble/event.go:1228 ⋮ [n?,s?,pebble] 15  [JOB 2] flushing: blob file created 000010
+I260313 02:26:58.701265 121 3@pebble/event.go:1288 ⋮ [n?,s?,pebble] 16  [JOB 2] flushing: sstable created 000011
+I260313 02:26:58.706154 121 3@pebble/event.go:1288 ⋮ [n?,s?,pebble] 17  [JOB 2] flushing: sstable created 000012
+I260313 02:26:58.711401 121 3@pebble/event.go:1288 ⋮ [n?,s?,pebble] 18  [JOB 2] flushing: sstable created 000013
+I260313 02:26:58.711534 121 3@pebble/event.go:1228 ⋮ [n?,s?,pebble] 19  [JOB 2] flushing: blob file created 000014
+I260313 02:26:58.725058 121 3@pebble/event.go:1324 ⋮ [n?,s?,pebble] 20  available disk space under 10% (40GB of 460GB)
+I260313 02:26:58.733956 121 3@pebble/event.go:1280 ⋮ [n?,s?,pebble] 21  [JOB 2] MANIFEST created 000015
+I260313 02:26:58.734017 121 3@pebble/event.go:1264 ⋮ [n?,s?,pebble] 22  [JOB 2] flushed 6 memtables (4.6MB) to L0 [000009 000011 000012 000013] (160KB) blobs [000010 000014 (MVCCGarbage: 0.7%)] (227KB), in 0.0s (0.0s total), output rate 4.5MB/s
+I260313 02:26:58.734120 23 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 23  [JOB 4] compacting(move) L0 [000009] (28KB) Score=100.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.734429 119 3@pebble/event.go:1312 ⋮ [n?,s?,pebble] 24  [JOB 2] WAL deleted 000002
+I260313 02:26:58.735032 119 3@pebble/event.go:1312 ⋮ [n?,s?,pebble] 25  [JOB 2] WAL deleted 000004
+I260313 02:26:58.736841 119 3@pebble/event.go:1312 ⋮ [n?,s?,pebble] 26  [JOB 2] WAL deleted 000005
+I260313 02:26:58.740985 105 3@pebble/event.go:1308 ⋮ [n?,s?,pebble] 27  [JOB 1] WAL created 000016
+I260313 02:26:58.741038 119 3@pebble/event.go:1312 ⋮ [n?,s?,pebble] 28  [JOB 2] WAL deleted 000006
+I260313 02:26:58.741697 119 3@pebble/event.go:1312 ⋮ [n?,s?,pebble] 29  [JOB 2] WAL deleted 000007
+I260313 02:26:58.750051 23 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 30  [JOB 4] compacted(move) L0 [000009] (28KB) Score=100.00 + L6 [] (0B) Score=0.00 -> L6 [000009] (28KB), in 0.0s (0.0s total), output rate 4.9GB/s
+I260313 02:26:58.750079 85 3@pebble/event.go:1300 ⋮ [n?,s?,pebble] 31  [JOB 5] all initial table stats loaded
+I260313 02:26:58.750175 24 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 32  [JOB 6] compacting(move) L0 [000011] (10KB) Score=100.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.755111 24 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 33  [JOB 6] compacted(move) L0 [000011] (10KB) Score=100.00 + L6 [] (0B) Score=0.00 -> L6 [000011] (10KB), in 0.0s (0.0s total), output rate 9.0GB/s
+I260313 02:26:58.755258 89 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 34  [JOB 7] compacting(move) L0 [000012] (2.4KB) Score=100.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.761033 89 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 35  [JOB 7] compacted(move) L0 [000012] (2.4KB) Score=100.00 + L6 [] (0B) Score=0.00 -> L6 [000012] (2.4KB), in 0.0s (0.0s total), output rate 832MB/s
+I260313 02:26:58.761084 90 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 36  [JOB 8] compacting(move) L0 [000013] (119KB) Score=100.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.764884 90 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 37  [JOB 8] compacted(move) L0 [000013] (119KB) Score=100.00 + L6 [] (0B) Score=0.00 -> L6 [000013] (119KB), in 0.0s (0.0s total), output rate 118GB/s
+I260313 02:26:58.764920 91 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 38  [JOB 9] compacting(elision-only) L6 [000012] (2.4KB) Score=0.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.772963 91 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 39  [JOB 9] compacted(elision-only) L6 [000012] (2.4KB) Score=0.00 + L6 [] (0B) Score=0.00 -> L6 [] (0B), in 0.0s (0.0s total), output rate 0B/s
+I260313 02:26:58.773018 92 3@pebble/event.go:1248 ⋮ [n?,s?,pebble] 40  [JOB 10] compacting(elision-only) L6 [000011] (10KB) Score=0.00 + L6 [] (0B) Score=0.00; OverlappingRatio: Single 0.00, Multi 0.00
+I260313 02:26:58.773517 119 3@pebble/event.go:1292 ⋮ [n?,s?,pebble] 41  [JOB 9] sstable deleted 000012
+I260313 02:26:58.773576 92 3@pebble/event.go:1288 ⋮ [n?,s?,pebble] 42  [JOB 10] compacting: sstable created 000018
+I260313 02:26:58.784017 105 3@pebble/event.go:1280 ⋮ [n?,s?,pebble] 43  [JOB 1] MANIFEST created 000001
+I260313 02:26:58.784086 105 3@pebble/open.go:416 ⋮ [n?,s?,pebble] 44  Found 0 WALs
+I260313 02:26:58.788017 92 3@pebble/event.go:1252 ⋮ [n?,s?,pebble] 45  [JOB 10] compacted(elision-only) L6 [000011] (10KB) Score=0.00 + L6 [] (0B) Score=0.00 -> L6 [000018] (5.0KB), in 0.0s (0.0s total), output rate 451KB/s
+I260313 02:26:58.788877 119 3@pebble/event.go:1292 ⋮ [n?,s?,pebble] 46  [JOB 10] sstable deleted 000011
+I260313 02:26:58.793033 105 3@pebble/event.go:1308 ⋮ [n?,s?,pebble] 47  [JOB 1] WAL created 000002
+I260313 02:26:58.797938 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 48  upgraded to format version: 014
+I260313 02:26:58.801992 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 49  upgraded to format version: 015
+I260313 02:26:58.806108 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 50  upgraded to format version: 016
+I260313 02:26:58.809930 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 51  upgraded to format version: 017
+I260313 02:26:58.813980 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 52  upgraded to format version: 018
+I260313 02:26:58.819116 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 53  upgraded to format version: 019
+I260313 02:26:58.823969 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 54  upgraded to format version: 020
+I260313 02:26:58.827946 105 3@pebble/event.go:1276 ⋮ [n?,s?,pebble] 55  upgraded to format version: 021
+I260313 02:26:58.837288 105 3@pebble/event.go:1324 ⋮ [n?,s?,pebble] 56  available disk space under 10% (40GB of 460GB)
+I260313 02:26:58.837339 183 3@pebble/event.go:1300 ⋮ [n?,s?,pebble] 57  [JOB 2] all initial table stats loaded
