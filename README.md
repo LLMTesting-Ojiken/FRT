@@ -131,8 +131,21 @@ During testing, FRT continuously generates database states and semantically equi
 
 # Experimental Evaluation
 
-We evaluate FRT on SQLite, MySQL, TiDB, and CockroachDB. Section 4.2 measures the numbers of logic, error, and crash bugs discovered by FRT. Section 4.3 analyzes the contributions of Function-Level Semantic Reconstruction and Boundary-Aware Semantic Amplification to logic bug detection. Section 4.4 investigates bug latency by tracing the earliest affected versions of confirmed bugs, demonstrating FRT’s ability to uncover long-standing correctness issues that remained hidden for years.
-All experimental data, including bug code, evaluation results, and analysis artifacts, are available in the Evaluation/ directory of this repository.
+We evaluate FRT on **SQLite**, **MySQL**, **TiDB**, and **CockroachDB**. Section **4.2** reports the numbers of logic, error, and crash bugs discovered by FRT. Section **4.3** analyzes the individual contributions of **Function-Level Semantic Reconstruction** and **Boundary-Aware Semantic Amplification** to logic bug detection. Section **4.4** investigates bug latency by tracing the earliest affected versions of confirmed bugs, demonstrating FRT’s ability to uncover long-standing correctness issues that remained hidden for years.
+
+For reproducibility, all experimental artifacts are provided in the [`EVALUATION/`](./EVALUATION) directory of this repository, including bug-triggering SQL test cases, evaluation results, and analysis artifacts. The directory is organized to mirror the evaluation sections in the paper:
+
+- **`EVALUATION/4.2/`**: Bug discovery results for each evaluated DBMS, containing logic, error, and crash bug test cases.
+- **`EVALUATION/4.3/`**: Component-wise analysis, separating bugs discovered by **Function-Level Semantic Reconstruction** and **Boundary-Aware Semantic Amplification**.
+- **`EVALUATION/4.4/`**: Bug latency analysis, grouping confirmed logic bugs by the earliest affected version (e.g., 2020, 2026).
+
+Within each section, artifacts are further organized by DBMS (**SQLite**, **MySQL**, **TiDB**, and **CockroachDB**), and each SQL file corresponds to a confirmed bug-triggering test case reported in the paper.
+
+```text
+EVALUATION/
+├── 4.2/   # Bug discovery results
+├── 4.3/   # Component contribution analysis
+└── 4.4/   # Bug latency analysis
 
 ---
 
