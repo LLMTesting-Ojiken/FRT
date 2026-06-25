@@ -129,6 +129,13 @@ During testing, FRT continuously generates database states and semantically equi
 
 ---
 
+# Experimental Evaluation
+
+We evaluate FRT on SQLite, MySQL, TiDB, and CockroachDB. Section 4.2 measures the numbers of logic, error, and crash bugs discovered by FRT. Section 4.3 analyzes the contributions of Function-Level Semantic Reconstruction and Boundary-Aware Semantic Amplification to logic bug detection. Section 4.4 investigates bug latency by tracing the earliest affected versions of confirmed bugs, demonstrating FRT’s ability to uncover long-standing correctness issues that remained hidden for years.
+All experimental data, including bug code, evaluation results, and analysis artifacts, are available in the Evaluation/ directory of this repository.
+
+---
+
 # Acknowledgement
 
 FRT is implemented on top of the **SQLancer** framework and extends it with a novel **Function-Level Semantic Reconstruction Testing (FRT)** oracle for detecting DBMS logic bugs.
