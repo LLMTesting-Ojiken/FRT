@@ -1,0 +1,8 @@
+DROP view v0;
+DROP VIEW IF EXISTS v0;
+DROP TABLE IF EXISTS vt0;
+create virtual table vt0 using fts5 ( c0 UNINDEXED );
+INSERT INTO vt0 (c0) VALUES (2);
+CREATE VIEW v0(c0) AS SELECT TRUE FROM vt0 ORDER BY vt0.c0 <=vt0.c0 ;
+SELECT v0.c0 > v0.c0, COUNT(NULL) FROM v0, vt0 WHERE v0.c0 IN ();
+SELECT v0.c0 > v0.c0, COALESCE(SUM(NULL), 0) FROM v0, vt0 WHERE v0.c0 IN ();

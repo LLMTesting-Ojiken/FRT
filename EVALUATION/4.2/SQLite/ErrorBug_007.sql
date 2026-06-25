@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS vt0;
+CREATE TABLE vt0 ( c0 BLOB );
+INSERT INTO vt0 (c0) VALUES (x'2D8D'), ('403429712');
+SELECT ALL c0 FROM vt0 WHERE (((json_array_length(vt0.c0)) AND ((('') ISNULL))) OR (vt0.c0 COLLATE BINARY));
+SELECT COALESCE(( SELECT ALL c0 FROM vt0 WHERE (((json_array_length(vt0.c0)) AND ((('') ISNULL))) OR (vt0.c0 COLLATE BINARY)) ), 0);

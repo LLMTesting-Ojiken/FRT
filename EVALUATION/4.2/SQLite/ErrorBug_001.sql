@@ -1,0 +1,38 @@
+CREATE TABLE rt0
+(
+c0 INTEGER,
+c1 INTEGER,
+c2 INTEGER
+);
+INSERT INTO rt0 (c0, c1, c2)
+VALUES (0, 0, 0);
+CREATE VIRTUAL TABLE vt1 USING fts4
+(
+c0,
+c1
+UNINDEXED,
+c2
+UNINDEXED,
+languageid=
+"lid"
+);
+CREATE VIEW v0 AS
+SELECT 1 AS c0 WHERE 0;
+SELECT *FROM v0;
+SELECT COALESCE(SUM(1), 0)
+FROM rt0, v0 WHERE load_extension(1);
+DROP VIEW IF EXISTS v0;
+CREATE VIEW v0(c0) AS
+SELECT ((((vt1.c0) OR (vt1.c1))) AND (vt1.c1)) COLLATE BINARY
+FROM vt1,
+rt0
+WHERE (vt1.c1)
+ORDER BY vt1.c1 NULLS FIRST, ((vt1.c0) NOT NULL) NULLS LAST, CASE WHEN (((rt0.c1, vt1.c0, rt0.c0, vt1.c2, vt1.c0)) NOT BETWEEN ((rt0.c2, 0.10535671390266399, vt1.c0, vt1.c2, vt1.c1)) AND ((rt0.c0, vt1.c2, NULL, rt0.c1, rt0.c1))) THEN UPPER(vt1.c0) END;
+SELECT COALESCE(SUM(1), 0)
+FROM rt0,
+v0
+WHERE load_extension(1);
+SELECT COALESCE(SUM(1), 0)
+FROM rt0,
+v0
+WHERE abs(1,2);

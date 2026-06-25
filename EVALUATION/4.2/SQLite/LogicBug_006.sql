@@ -1,0 +1,1 @@
+SELECT sin(column1) FROM (VALUES (x'77'));

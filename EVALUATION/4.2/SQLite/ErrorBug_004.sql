@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS t0;
+CREATE TABLE t0( c0 TEXT );
+INSERT INTO t0 (c0) VALUES (''), (''), (''), (''), (''), (''), ('');
+SELECT ( SELECT DISTINCT CAST(GROUP_CONCAT(t0.c0) AS REAL) FROM t0 WHERE ( (((highlight(t0.c0, t0.c0, t0.c0, t0.c0)) AND ((x'') ISNULL))) OR (t0.c0 IN ()) ) ) AS val;
+SELECT ( SELECT DISTINCT CAST(GROUP_CONCAT(t0.c0) AS REAL) FROM t0 WHERE ( (((highlight(t0.c0,t0.c0,t0.c0,t0.c0)) AND ((x'' || '') ISNULL))) OR (t0.c0 IN ()) ) ) AS val;
+SELECT ( SELECT DISTINCT CAST(GROUP_CONCAT(t0.c0) AS REAL) FROM t0 WHERE ( (((highlight(t0.c0,t0.c0,t0.c0,t0.c0)) AND ((SELECT x'') ISNULL))) OR (t0.c0 IN ()) ) ) AS val;

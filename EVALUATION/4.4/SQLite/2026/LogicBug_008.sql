@@ -1,0 +1,1 @@
+SELECT QUOTE('L' || char(0x17) || 'A' || char(0x13) || '2');

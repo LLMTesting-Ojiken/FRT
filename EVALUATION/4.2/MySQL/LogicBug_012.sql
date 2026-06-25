@@ -1,0 +1,23 @@
+CREATE DATABASE IF NOT EXISTS mydb;
+USE mydb;
+DROP TABLE IF EXISTS t9;
+CREATE TABLE t9
+(
+c0 INT NULL
+);
+
+INSERT INTO t9 VALUES (0), (NULL);
+
+– Query 1 (baseline)
+SELECT DISTINCTROW
+IFNULL(COUNT(0), 0),
+JSON_SET('{}', '$.k', c0)
+FROM t9
+GROUP BY c0;
+
+– Query 2 (equivalent rewrite)
+SELECT DISTINCTROW
+1,
+JSON_SET('{}', '$.k', c0)
+FROM t9
+GROUP BY c0;
